@@ -1,18 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace CNAWeek2Task2 {
     public class Multithreading {
-        static private int id;
+        private int id;
 
         public Multithreading (int identity) {
             id = identity;
         }
 
-        static public void Function() {
+        public void Function() {
             for (int i = 0; i < 5; i++) {
                 Console.WriteLine("Thread " + id);
-                Thread.Sleep(100);
+                Thread.Sleep(500);
             }
         }
     }
@@ -24,8 +25,7 @@ namespace CNAWeek2Task2 {
             List<Thread> threads = new List<Thread>();
 
             for (int i = 0; i <= threadAmount; i++) {
-                Multithreading mt = new Multithreading(i);
-                threads.Add(new Thread(new ThreadStart(mt.Function)));
+                threads.Add(new Thread(new ThreadStart(new Multithreading(i).Function)));
                 threads[i].Start();
             }
         }
