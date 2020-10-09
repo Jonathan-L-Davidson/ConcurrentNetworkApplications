@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace CNAWeek2 {
+namespace CNAWeek2Task1 {
     public class Multithreading {
         public static void Function() {
             for (int i = 100; i >= 0; i--) {
@@ -11,7 +11,7 @@ namespace CNAWeek2 {
         }
     }
 
-    class Program {
+    class main {
         static void Main(string[] args) {
             Thread thread1 = new Thread(Multithreading.Function);
             thread1.Start();
