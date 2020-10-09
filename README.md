@@ -1,2 +1,2 @@
-# CNAWeek2
-Concurrent Network Application tutorial week 2
+# Concurrent Network Applications
+Concurrent Network Application tutorials
