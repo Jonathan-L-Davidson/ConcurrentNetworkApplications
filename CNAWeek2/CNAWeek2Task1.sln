@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNAWeek2", "CNAWeek2\CNAWeek2.csproj", "{CAB7BB35-92E7-41A3-BDE8-F1E937BF2489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNAWeek2Task1", "CNAWeek2\CNAWeek2Task1.csproj", "{CAB7BB35-92E7-41A3-BDE8-F1E937BF2489}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
