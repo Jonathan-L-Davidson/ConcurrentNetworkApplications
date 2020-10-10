@@ -10,10 +10,18 @@ namespace CNAWeek2Task4 {
         static void Main(string[] args) {
             const int threadAmount = 1000;
 
+            // /*
             for (int i = 0; i <= threadAmount; i++) {
                 int num = i;
                 new Thread(() => CheckIfPrimeNumber(num)).Start();
             }
+            // */
+
+            /*
+            for (int i = 0; i <= threadAmount; i++) {
+                CheckIfPrimeNumber(i);
+            }
+            */
         }
         public static void CheckIfPrimeNumber(int number) {
             double numberRoot = Math.Sqrt(number);
